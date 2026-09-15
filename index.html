@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="GAMVI: metric visual–inertial camera estimation for world-grounded human motion. Trajectory comparisons on TUM-VI and EMDB.">
+  <meta name="author" content="Anonymous Authors">
+  <meta name="theme-color" content="#075985">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GAMVI — GaugeAware">
+  <meta property="og:description" content="Metric visual–inertial camera estimation for world-grounded human motion.">
+  <meta name="twitter:card" content="summary">
+  <title>GAMVI · GaugeAware</title>
+  <link rel="icon" href="./static/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./static/fonts/SourceSans3Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/index.css?v=20260916-source-sans">
+  <script src="./static/js/gallery.js" defer></script>
+  <script src="./static/js/index.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#overview">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item brand-mark" href="#top">GAMVI<span class="brand-dot">.</span></a>
+        <button class="navbar-burger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation"><span></span><span></span><span></span></button>
+      </div>
+      <div id="site-navigation" class="navbar-menu"><div class="navbar-end">
+        <a class="navbar-item" href="#overview">Overview</a><a class="navbar-item" href="#method">Method</a>
+        <a class="navbar-item" href="#tumvi">TUM-VI</a><a class="navbar-item" href="#emdb">EMDB</a><a class="navbar-item" href="#demonstrations">Demonstrations</a>
+      </div></div>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero publication-hero"><div class="container hero-body">
+      <p class="eyebrow">Visual–inertial estimation · Human motion</p>
+      <h1>GaugeAware<span>Metric Visual–Inertial Camera Estimation<br class="wide-only"> for World-Grounded Human Motion</span></h1>
+      <p class="method-name">GAMVI</p><p class="publication-authors">Anonymous Authors</p>
+      <div class="publication-links" aria-label="Publication resources">
+        <span class="resource-button" aria-disabled="true">Paper <small>Coming soon</small></span>
+        <span class="resource-button" aria-disabled="true">Code <small>Coming soon</small></span>
+        <span class="resource-button" aria-disabled="true">arXiv <small>Coming soon</small></span>
+      </div>
+      <p class="hero-lead">Recover metric camera motion.<br> Ground human motion in the metric world frame.</p>
+      <figure class="hero-recording">
+        <video controls muted playsinline preload="none" poster="./static/videos/P0_09_poster.webp" width="1920" height="1080" aria-label="Outdoor walking: image-space mesh overlay and world reconstruction"><source src="./static/videos/P0_09.mp4" type="video/mp4"></video>
+        <figcaption>P0_09 · Outdoor walking. GAMVI camera + fixed GVHMR human predictions.<br><span class="protocol-tag">EMDB · GT-derived synthetic IMU · Offline reconstruction</span></figcaption>
+      </figure>
+    </div></section>
+    <section id="overview" class="section"><div class="container text-width">
+      <p class="eyebrow">01 / Overview</p><h2>Camera motion connects local pose to the world.</h2>
+      <p>Recovering human motion in world coordinates requires both camera-relative body predictions and a consistent camera trajectory. Errors in camera scale and motion propagate directly into the reconstructed human trajectory.</p>
+      <p>GAMVI combines a learned visual front end with inertial estimation. Metric initialization establishes scale before fixed-lag refinement. Current visual constraints and validated historical constraints then contribute to the navigation graph, while camera-relative human predictions remain fixed.</p>
+      <div class="stat-grid">
+        <div><strong>94%</strong><span>Mean paired reduction in absolute log-scale error</span></div>
+        <div><strong>56%</strong><span>Mean paired reduction in Sim(3)-aligned camera ATE</span></div>
+        <div><strong>18 pairs</strong><span>Six TUM-VI rooms × three runs</span></div>
+      </div>
+      <p class="fine-print">Rounded paper results against the paired visual-only baseline on room1–room6. These are not averages of the replicate-0 gallery.</p>
+    </div></section>
+    <section id="method" class="section tinted"><div class="container">
+      <p class="eyebrow">02 / Method</p><h2>Metric initialization. Persistent visual information.</h2>
+      <p class="section-lead">Pi3MOS/FastBA provides visual constraints; a GTSAM fixed-lag graph estimates camera motion, velocity and IMU bias.</p>
+      <figure class="architecture"><a href="./static/images/figures/method_architecture.png" target="_blank" rel="noopener"><img src="./static/images/figures/method_architecture.png" alt="GAMVI architecture: metric initialization and fixed-lag navigation with current and retired visual constraints" loading="lazy" decoding="async"></a><figcaption>Visual–inertial camera estimation with fixed camera-relative human predictions.</figcaption></figure>
+      <div class="method-grid">
+        <article><span>01</span><h3>Establish metric scale</h3><p>Align a visual–inertial initialization prefix and validate the metric state before activating navigation.</p></article>
+        <article><span>02</span><h3>Preserve visual information</h3><p>Replace the current visual factor and retain admissible historical constraints as states leave the active visual system.</p></article>
+        <article><span>03</span><h3>Reconstruct world motion</h3><p>Compose the estimated metric camera trajectory with fixed camera-relative body predictions.</p></article>
+      </div>
+    </div></section>
+    <section id="tumvi" class="section"><div class="container">
+      <p class="eyebrow">03 / TUM-VI results</p><h2>Camera trajectories with measured IMU.</h2>
+      <p class="section-lead">Six rooms, a fixed run-selection rule, and a common evaluation timeline.</p>
+      <div class="table-wrap"><table><caption>Visual–inertial camera estimation</caption><thead><tr><th scope="col">Method</th><th scope="col">ATE SE(3) ↓<small>m</small></th><th scope="col">ATE Sim(3) ↓<small>m</small></th><th scope="col">|log s| ↓</th><th scope="col">Rotation ↓<small>degrees</small></th><th scope="col">RPE translation ↓<small>m</small></th></tr></thead><tbody>
+        <tr class="ours"><th scope="row">GAMVI</th><td>0.101</td><td>0.097</td><td>0.0229</td><td>1.80</td><td>0.015</td></tr>
+        <tr><th scope="row">DBA-Fusion</th><td>0.185</td><td>0.184</td><td>0.0184</td><td>3.52</td><td>0.061</td></tr>
+        <tr><th scope="row">DM-VIO</th><td>0.114</td><td>0.095</td><td>0.0502</td><td>2.08</td><td>0.038</td></tr>
+        <tr><th scope="row">MASt3R-Fusion</th><td>0.227</td><td>0.221</td><td>0.0458</td><td>4.31</td><td>0.022</td></tr>
+      </tbody></table></div>
+      <p class="fine-print">Paper aggregates: mean over three runs per room, then equally over room1–room6. All methods share evaluation timestamps within a run. RPE uses consecutive evaluated poses at native metric scale. Lower is better. DBA-Fusion reports room1–room5 only; its Room 6 runs have large trajectory errors and are excluded from its aggregate.</p>
+      <div class="gallery" data-dataset="tumvi"></div>
+    </div></section>
+    <section id="emdb" class="section tinted"><div class="container">
+      <p class="eyebrow">04 / EMDB results</p><h2>From camera trajectories to human motion.</h2>
+      <p class="section-lead">All 22 sequences in the paper's evaluaton set, spanning indoor walking, stairs, long-range motion and non-walking activities.</p>
+      <p class="notice">EMDB uses <strong>GT-derived synthetic camera IMU</strong></p>
+      <div class="table-wrap"><table><caption>World-frame human reconstruction · 22 sequences</caption><thead><tr><th scope="col">Method / composition</th><th scope="col">WA-MPJPE<sub>100</sub> ↓<small>mm</small></th><th scope="col">W-MPJPE<sub>100</sub> ↓<small>mm</small></th><th scope="col">RTE ↓<small>%</small></th></tr></thead><tbody>
+        <tr><th scope="row">WHAM</small></th><td>140.46</td><td>346.81</td><td>3.96</td></tr>
+        <tr><th scope="row">GVHMR</small></th><td>118.03</td><td>288.63</td><td>2.01</td></tr>
+        <tr><th scope="row">TRAM</th><td>78.35</td><td>220.11</td><td>1.50</td></tr>
+        <tr class="ours"><th scope="row">GAMVI + fixed GVHMR</small></th><td>65.61</td><td>191.64</td><td>1.39</td></tr>
+      </tbody></table></div>
+      <p class="fine-print">Paper values on the fixed 22-sequence cohort. W/WA-MPJPE use 100-frame segments; evaluation uses annotated valid frames.</p>
+      <p class="composition-note"><strong>Table and gallery use fixed GVHMR human predictions.</strong></p>
+      <div class="gallery" data-dataset="emdb"></div>
+    </div></section>
+    <section id="demonstrations" class="section"><div class="container">
+      <p class="eyebrow">05 / Demonstrations</p><h2>Image-space and world-space reconstruction.</h2>
+      <p class="section-lead">GAMVI + fixed GVHMR · EMDB synthetic IMU</p>
+      <p>Left: camera-space mesh overlay. Right: reconstructed human, camera trajectory and sparse map.</p>
+      <div class="demo-grid">
+        <figure><video controls muted playsinline preload="none" poster="./static/videos/P2_19_poster.webp" width="1920" height="1080" aria-label="P2_19 indoor walking reconstruction"><source src="./static/videos/P2_19.mp4" type="video/mp4"></video><figcaption>P2_19 · Indoor walking.</figcaption></figure>
+        <figure><video controls muted playsinline preload="none" poster="./static/videos/P9_77_poster.webp" width="1920" height="1080" aria-label="P9_77 stairs reconstruction"><source src="./static/videos/P9_77.mp4" type="video/mp4"></video><figcaption>P9_77 · Outdoor stairs.</figcaption></figure>
+      </div>
+      <!-- <p class="fine-print">All demonstrations use GT-derived synthetic camera IMU.</p> -->
+    </div></section>
+  </main>
+  <footer><div class="container"><p>GAMVI · Anonymous project page. Paper and code forthcoming.</p><p>Template adapted from <a href="https://github.com/nerfies/nerfies.github.io" rel="noopener">Nerfies</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license noopener">CC BY-SA 4.0</a>.</p></div></footer>
+  <dialog id="figure-dialog" aria-label="Trajectory figure"><button type="button" class="dialog-close" aria-label="Close figure">Close ×</button><img alt=""><p></p></dialog>
+  <noscript><p class="notice">Enable JavaScript to choose gallery sequences. Videos and summary tables remain available.</p></noscript>
+</body></html>

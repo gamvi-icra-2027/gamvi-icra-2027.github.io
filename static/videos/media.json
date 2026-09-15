@@ -1,0 +1,47 @@
+[
+  {
+    "sequence": "P0_09",
+    "video": "./static/videos/P0_09.mp4",
+    "poster": "./static/videos/P0_09_poster.webp",
+    "imu": "GT-derived synthetic",
+    "composition": "GAMVI + fixed GVHMR",
+    "world_origin": "human0-heading-feet",
+    "ground": "off",
+    "fps": 30,
+    "speed": 1,
+    "width": 1920,
+    "height": 1080,
+    "mesh_color": "blue",
+    "view": "current"
+  },
+  {
+    "sequence": "P2_19",
+    "video": "./static/videos/P2_19.mp4",
+    "poster": "./static/videos/P2_19_poster.webp",
+    "imu": "GT-derived synthetic",
+    "composition": "GAMVI + fixed GVHMR",
+    "world_origin": "human0-heading-feet",
+    "ground": "off",
+    "fps": 30,
+    "speed": 1,
+    "width": 1920,
+    "height": 1080,
+    "mesh_color": "blue",
+    "view": "v1"
+  },
+  {
+    "sequence": "P9_77",
+    "video": "./static/videos/P9_77.mp4",
+    "poster": "./static/videos/P9_77_poster.webp",
+    "imu": "GT-derived synthetic",
+    "composition": "GAMVI + fixed GVHMR",
+    "world_origin": "human0-heading-feet",
+    "ground": "off",
+    "fps": 30,
+    "speed": 1,
+    "width": 1920,
+    "height": 1080,
+    "mesh_color": "blue",
+    "view": "v1"
+  }
+]

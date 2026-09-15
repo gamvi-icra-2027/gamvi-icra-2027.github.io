@@ -1,0 +1,669 @@
+{
+  "tumvi": [
+    {
+      "id": "room1",
+      "title": "Room 1",
+      "caption": "Camera trajectories with measured IMU. Replicate 0, selected independently of error. All methods use the same timestamps and a separate rigid SE(3) alignment to GT; scale is not fitted. All four panels share axis limits and equal geometric scale. Displayed ATE is the 3D RMSE on these exact plotted timestamps. The paper aggregate contains three runs for each of all six rooms.",
+      "valid_frames": 282,
+      "metric_label": "ATE SE(3) (m)",
+      "metrics": {
+        "GAMVI": 0.06577541894681653,
+        "DBA-Fusion": 0.16218426598089142,
+        "DM-VIO": 0.0711522017102442,
+        "MASt3R-Fusion": 0.16250664778720608
+      },
+      "panels": {
+        "pdf": "./static/gallery/tumvi_room1_panels.pdf",
+        "png": "./static/gallery/tumvi_room1_panels.png",
+        "webp": "./static/gallery/tumvi_room1_panels.webp",
+        "preview": "./static/gallery/tumvi_room1_panels_preview.webp"
+      }
+    },
+    {
+      "id": "room2",
+      "title": "Room 2",
+      "caption": "Camera trajectories with measured IMU. Replicate 0, selected independently of error. All methods use the same timestamps and a separate rigid SE(3) alignment to GT; scale is not fitted. All four panels share axis limits and equal geometric scale. Displayed ATE is the 3D RMSE on these exact plotted timestamps. The paper aggregate contains three runs for each of all six rooms.",
+      "valid_frames": 212,
+      "metric_label": "ATE SE(3) (m)",
+      "metrics": {
+        "GAMVI": 0.21199766010772617,
+        "DBA-Fusion": 0.23609036182362533,
+        "DM-VIO": 0.2649419744470891,
+        "MASt3R-Fusion": 0.38090734335584125
+      },
+      "panels": {
+        "pdf": "./static/gallery/tumvi_room2_panels.pdf",
+        "png": "./static/gallery/tumvi_room2_panels.png",
+        "webp": "./static/gallery/tumvi_room2_panels.webp",
+        "preview": "./static/gallery/tumvi_room2_panels_preview.webp"
+      }
+    },
+    {
+      "id": "room3",
+      "title": "Room 3",
+      "caption": "Camera trajectories with measured IMU. Replicate 0, selected independently of error. All methods use the same timestamps and a separate rigid SE(3) alignment to GT; scale is not fitted. All four panels share axis limits and equal geometric scale. Displayed ATE is the 3D RMSE on these exact plotted timestamps. The paper aggregate contains three runs for each of all six rooms.",
+      "valid_frames": 243,
+      "metric_label": "ATE SE(3) (m)",
+      "metrics": {
+        "GAMVI": 0.13365410129963712,
+        "DBA-Fusion": 0.22380514011922048,
+        "DM-VIO": 0.14842733547118905,
+        "MASt3R-Fusion": 0.2821932744678373
+      },
+      "panels": {
+        "pdf": "./static/gallery/tumvi_room3_panels.pdf",
+        "png": "./static/gallery/tumvi_room3_panels.png",
+        "webp": "./static/gallery/tumvi_room3_panels.webp",
+        "preview": "./static/gallery/tumvi_room3_panels_preview.webp"
+      }
+    },
+    {
+      "id": "room4",
+      "title": "Room 4",
+      "caption": "Camera trajectories with measured IMU. Replicate 0, selected independently of error. All methods use the same timestamps and a separate rigid SE(3) alignment to GT; scale is not fitted. All four panels share axis limits and equal geometric scale. Displayed ATE is the 3D RMSE on these exact plotted timestamps. The paper aggregate contains three runs for each of all six rooms.",
+      "valid_frames": 166,
+      "metric_label": "ATE SE(3) (m)",
+      "metrics": {
+        "GAMVI": 0.04872597080696216,
+        "DBA-Fusion": 0.17993479632547638,
+        "DM-VIO": 0.06610024675070413,
+        "MASt3R-Fusion": 0.11545470470480944
+      },
+      "panels": {
+        "pdf": "./static/gallery/tumvi_room4_panels.pdf",
+        "png": "./static/gallery/tumvi_room4_panels.png",
+        "webp": "./static/gallery/tumvi_room4_panels.webp",
+        "preview": "./static/gallery/tumvi_room4_panels_preview.webp"
+      }
+    },
+    {
+      "id": "room5",
+      "title": "Room 5",
+      "caption": "Camera trajectories with measured IMU. Replicate 0, selected independently of error. All methods use the same timestamps and a separate rigid SE(3) alignment to GT; scale is not fitted. All four panels share axis limits and equal geometric scale. Displayed ATE is the 3D RMSE on these exact plotted timestamps. The paper aggregate contains three runs for each of all six rooms.",
+      "valid_frames": 329,
+      "metric_label": "ATE SE(3) (m)",
+      "metrics": {
+        "GAMVI": 0.05879705169368033,
+        "DBA-Fusion": 0.12510633317893366,
+        "DM-VIO": 0.09290445791944761,
+        "MASt3R-Fusion": 0.22633538854732704
+      },
+      "panels": {
+        "pdf": "./static/gallery/tumvi_room5_panels.pdf",
+        "png": "./static/gallery/tumvi_room5_panels.png",
+        "webp": "./static/gallery/tumvi_room5_panels.webp",
+        "preview": "./static/gallery/tumvi_room5_panels_preview.webp"
+      }
+    },
+    {
+      "id": "room6",
+      "title": "Room 6",
+      "caption": "Camera trajectories with measured IMU. Replicate 0, selected independently of error. All methods use the same timestamps and a separate rigid SE(3) alignment to GT; scale is not fitted. All four panels share axis limits and equal geometric scale. Displayed ATE is the 3D RMSE on these exact plotted timestamps. The paper aggregate contains three runs for each of all six rooms.",
+      "valid_frames": 117,
+      "metric_label": "ATE SE(3) (m)",
+      "metrics": {
+        "GAMVI": 0.08285088881217914,
+        "DBA-Fusion": 22.914067171754063,
+        "DM-VIO": 0.05282702170298178,
+        "MASt3R-Fusion": 0.19372842624463504
+      },
+      "panels": {
+        "pdf": "./static/gallery/tumvi_room6_panels.pdf",
+        "png": "./static/gallery/tumvi_room6_panels.png",
+        "webp": "./static/gallery/tumvi_room6_panels.webp",
+        "preview": "./static/gallery/tumvi_room6_panels_preview.webp"
+      }
+    }
+  ],
+  "emdb": [
+    {
+      "id": "P2_19",
+      "title": "Indoor walking",
+      "valid_frames": 1299,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 0.9280122518539429,
+        "WHAM (official)": 0.49888622760772705,
+        "TRAM": 3.6172168254852295,
+        "GAMVI + fixed GVHMR": 0.7074874639511108
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P2_19_panels.pdf",
+        "png": "./static/gallery/emdb_P2_19_panels.png",
+        "webp": "./static/gallery/emdb_P2_19_panels.webp",
+        "preview": "./static/gallery/emdb_P2_19_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P2_19_overlay.pdf",
+        "png": "./static/gallery/emdb_P2_19_overlay.png",
+        "webp": "./static/gallery/emdb_P2_19_overlay.webp",
+        "preview": "./static/gallery/emdb_P2_19_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P9_77",
+      "title": "Stairs up",
+      
+      "valid_frames": 728,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 1.1247683763504028,
+        "WHAM (official)": 1.2675530910491943,
+        "TRAM": 0.47855401039123535,
+        "GAMVI + fixed GVHMR": 0.35287049412727356
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P9_77_panels.pdf",
+        "png": "./static/gallery/emdb_P9_77_panels.png",
+        "webp": "./static/gallery/emdb_P9_77_panels.webp",
+        "preview": "./static/gallery/emdb_P9_77_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P9_77_overlay.pdf",
+        "png": "./static/gallery/emdb_P9_77_overlay.png",
+        "webp": "./static/gallery/emdb_P9_77_overlay.webp",
+        "preview": "./static/gallery/emdb_P9_77_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P2_24",
+      "title": "Long outdoor walk",
+      
+      "valid_frames": 3280,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 4.818028450012207,
+        "WHAM (official)": 6.880003929138184,
+        "TRAM": 12.557666778564453,
+        "GAMVI + fixed GVHMR": 2.813025712966919
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P2_24_panels.pdf",
+        "png": "./static/gallery/emdb_P2_24_panels.png",
+        "webp": "./static/gallery/emdb_P2_24_panels.webp",
+        "preview": "./static/gallery/emdb_P2_24_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P2_24_overlay.pdf",
+        "png": "./static/gallery/emdb_P2_24_overlay.png",
+        "webp": "./static/gallery/emdb_P2_24_overlay.webp",
+        "preview": "./static/gallery/emdb_P2_24_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P8_64",
+      "title": "Skateboarding",
+      
+      "valid_frames": 1704,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 17.553184509277344,
+        "WHAM (official)": 17.483232498168945,
+        "TRAM": 2.845338821411133,
+        "GAMVI + fixed GVHMR": 1.1896921396255493
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P8_64_panels.pdf",
+        "png": "./static/gallery/emdb_P8_64_panels.png",
+        "webp": "./static/gallery/emdb_P8_64_panels.webp",
+        "preview": "./static/gallery/emdb_P8_64_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P8_64_overlay.pdf",
+        "png": "./static/gallery/emdb_P8_64_overlay.png",
+        "webp": "./static/gallery/emdb_P8_64_overlay.webp",
+        "preview": "./static/gallery/emdb_P8_64_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P0_09",
+      "title": "Outdoor walking",
+      
+      "valid_frames": 2009,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 2.3482093811035156,
+        "WHAM (official)": 5.078373908996582,
+        "TRAM": 2.8478384017944336,
+        "GAMVI + fixed GVHMR": 2.0300211906433105
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P0_09_panels.pdf",
+        "png": "./static/gallery/emdb_P0_09_panels.png",
+        "webp": "./static/gallery/emdb_P0_09_panels.webp",
+        "preview": "./static/gallery/emdb_P0_09_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P0_09_overlay.pdf",
+        "png": "./static/gallery/emdb_P0_09_overlay.png",
+        "webp": "./static/gallery/emdb_P0_09_overlay.webp",
+        "preview": "./static/gallery/emdb_P0_09_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P4_35",
+      "title": "Indoor walking (challenging case)",
+      
+      "valid_frames": 1226,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 0.8138627409934998,
+        "WHAM (official)": 2.0063529014587402,
+        "TRAM": 1.0236929655075073,
+        "GAMVI + fixed GVHMR": 1.1742695569992065
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P4_35_panels.pdf",
+        "png": "./static/gallery/emdb_P4_35_panels.png",
+        "webp": "./static/gallery/emdb_P4_35_panels.webp",
+        "preview": "./static/gallery/emdb_P4_35_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P4_35_overlay.pdf",
+        "png": "./static/gallery/emdb_P4_35_overlay.png",
+        "webp": "./static/gallery/emdb_P4_35_overlay.webp",
+        "preview": "./static/gallery/emdb_P4_35_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P4_37",
+      "title": "Running in a circle",
+      
+      "valid_frames": 881,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 0.792997419834137,
+        "WHAM (official)": 0.7058463096618652,
+        "TRAM": 0.2439049482345581,
+        "GAMVI + fixed GVHMR": 0.36701250076293945
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P4_37_panels.pdf",
+        "png": "./static/gallery/emdb_P4_37_panels.png",
+        "webp": "./static/gallery/emdb_P4_37_panels.webp",
+        "preview": "./static/gallery/emdb_P4_37_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P4_37_overlay.pdf",
+        "png": "./static/gallery/emdb_P4_37_overlay.png",
+        "webp": "./static/gallery/emdb_P4_37_overlay.webp",
+        "preview": "./static/gallery/emdb_P4_37_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P6_48",
+      "title": "Downhill walking",
+      
+      "valid_frames": 1959,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 1.431470274925232,
+        "WHAM (official)": 6.5989155769348145,
+        "TRAM": 0.8857115507125854,
+        "GAMVI + fixed GVHMR": 0.7754402160644531
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P6_48_panels.pdf",
+        "png": "./static/gallery/emdb_P6_48_panels.png",
+        "webp": "./static/gallery/emdb_P6_48_panels.webp",
+        "preview": "./static/gallery/emdb_P6_48_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P6_48_overlay.pdf",
+        "png": "./static/gallery/emdb_P6_48_overlay.png",
+        "webp": "./static/gallery/emdb_P6_48_overlay.webp",
+        "preview": "./static/gallery/emdb_P6_48_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P7_58",
+      "title": "Parcours",
+      
+      "valid_frames": 1332,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 1.9552656412124634,
+        "WHAM (official)": 1.3778557777404785,
+        "TRAM": 5.249025344848633,
+        "GAMVI + fixed GVHMR": 0.9636424779891968
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P7_58_panels.pdf",
+        "png": "./static/gallery/emdb_P7_58_panels.png",
+        "webp": "./static/gallery/emdb_P7_58_panels.webp",
+        "preview": "./static/gallery/emdb_P7_58_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P7_58_overlay.pdf",
+        "png": "./static/gallery/emdb_P7_58_overlay.png",
+        "webp": "./static/gallery/emdb_P7_58_overlay.webp",
+        "preview": "./static/gallery/emdb_P7_58_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P7_61",
+      "title": "Sitting, lying and walking",
+      
+      "valid_frames": 1914,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 1.8584537506103516,
+        "WHAM (official)": 1.6129080057144165,
+        "TRAM": 1.5891319513320923,
+        "GAMVI + fixed GVHMR": 1.9409927129745483
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P7_61_panels.pdf",
+        "png": "./static/gallery/emdb_P7_61_panels.png",
+        "webp": "./static/gallery/emdb_P7_61_panels.webp",
+        "preview": "./static/gallery/emdb_P7_61_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P7_61_overlay.pdf",
+        "png": "./static/gallery/emdb_P7_61_overlay.png",
+        "webp": "./static/gallery/emdb_P7_61_overlay.webp",
+        "preview": "./static/gallery/emdb_P7_61_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P3_27",
+      "title": "Indoor walking",
+      
+      "valid_frames": 1448,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 1.791874647140503,
+        "WHAM (official)": 3.3258819580078125,
+        "TRAM": 1.8699345588684082,
+        "GAMVI + fixed GVHMR": 2.326857328414917
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P3_27_panels.pdf",
+        "png": "./static/gallery/emdb_P3_27_panels.png",
+        "webp": "./static/gallery/emdb_P3_27_panels.webp",
+        "preview": "./static/gallery/emdb_P3_27_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P3_27_overlay.pdf",
+        "png": "./static/gallery/emdb_P3_27_overlay.png",
+        "webp": "./static/gallery/emdb_P3_27_overlay.webp",
+        "preview": "./static/gallery/emdb_P3_27_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P3_28",
+      "title": "Walking and lunges",
+      
+      "valid_frames": 1836,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 3.1582367420196533,
+        "WHAM (official)": 13.6953125,
+        "TRAM": 4.278398513793945,
+        "GAMVI + fixed GVHMR": 3.3917622566223145
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P3_28_panels.pdf",
+        "png": "./static/gallery/emdb_P3_28_panels.png",
+        "webp": "./static/gallery/emdb_P3_28_panels.webp",
+        "preview": "./static/gallery/emdb_P3_28_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P3_28_overlay.pdf",
+        "png": "./static/gallery/emdb_P3_28_overlay.png",
+        "webp": "./static/gallery/emdb_P3_28_overlay.webp",
+        "preview": "./static/gallery/emdb_P3_28_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P3_29",
+      "title": "Stairs up",
+      
+      "valid_frames": 1205,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 2.5105202198028564,
+        "WHAM (official)": 4.226726055145264,
+        "TRAM": 2.076115846633911,
+        "GAMVI + fixed GVHMR": 2.1716411113739014
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P3_29_panels.pdf",
+        "png": "./static/gallery/emdb_P3_29_panels.png",
+        "webp": "./static/gallery/emdb_P3_29_panels.webp",
+        "preview": "./static/gallery/emdb_P3_29_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P3_29_overlay.pdf",
+        "png": "./static/gallery/emdb_P3_29_overlay.png",
+        "webp": "./static/gallery/emdb_P3_29_overlay.webp",
+        "preview": "./static/gallery/emdb_P3_29_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P3_30",
+      "title": "Stairs down",
+      
+      "valid_frames": 1137,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 3.1408157348632812,
+        "WHAM (official)": 4.179044246673584,
+        "TRAM": 1.8383883237838745,
+        "GAMVI + fixed GVHMR": 1.2918999195098877
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P3_30_panels.pdf",
+        "png": "./static/gallery/emdb_P3_30_panels.png",
+        "webp": "./static/gallery/emdb_P3_30_panels.webp",
+        "preview": "./static/gallery/emdb_P3_30_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P3_30_overlay.pdf",
+        "png": "./static/gallery/emdb_P3_30_overlay.png",
+        "webp": "./static/gallery/emdb_P3_30_overlay.webp",
+        "preview": "./static/gallery/emdb_P3_30_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P4_36",
+      "title": "Long outdoor walk",
+      
+      "valid_frames": 2160,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 2.4478964805603027,
+        "WHAM (official)": 6.127047538757324,
+        "TRAM": 3.571593761444092,
+        "GAMVI + fixed GVHMR": 3.678987979888916
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P4_36_panels.pdf",
+        "png": "./static/gallery/emdb_P4_36_panels.png",
+        "webp": "./static/gallery/emdb_P4_36_panels.webp",
+        "preview": "./static/gallery/emdb_P4_36_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P4_36_overlay.pdf",
+        "png": "./static/gallery/emdb_P4_36_overlay.png",
+        "webp": "./static/gallery/emdb_P4_36_overlay.webp",
+        "preview": "./static/gallery/emdb_P4_36_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P6_49",
+      "title": "Large stairs down",
+      
+      "valid_frames": 1559,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 1.1808922290802002,
+        "WHAM (official)": 1.6991479396820068,
+        "TRAM": 0.7530186176300049,
+        "GAMVI + fixed GVHMR": 0.4847771227359772
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P6_49_panels.pdf",
+        "png": "./static/gallery/emdb_P6_49_panels.png",
+        "webp": "./static/gallery/emdb_P6_49_panels.webp",
+        "preview": "./static/gallery/emdb_P6_49_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P6_49_overlay.pdf",
+        "png": "./static/gallery/emdb_P6_49_overlay.png",
+        "webp": "./static/gallery/emdb_P6_49_overlay.webp",
+        "preview": "./static/gallery/emdb_P6_49_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P7_55",
+      "title": "Outdoor walking",
+      
+      "valid_frames": 2179,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 4.830618381500244,
+        "WHAM (official)": 4.749868392944336,
+        "TRAM": 3.28469181060791,
+        "GAMVI + fixed GVHMR": 2.705674648284912
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P7_55_panels.pdf",
+        "png": "./static/gallery/emdb_P7_55_panels.png",
+        "webp": "./static/gallery/emdb_P7_55_panels.webp",
+        "preview": "./static/gallery/emdb_P7_55_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P7_55_overlay.pdf",
+        "png": "./static/gallery/emdb_P7_55_overlay.png",
+        "webp": "./static/gallery/emdb_P7_55_overlay.webp",
+        "preview": "./static/gallery/emdb_P7_55_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P7_56",
+      "title": "Stairs up and down",
+      
+      "valid_frames": 1120,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 1.560929775238037,
+        "WHAM (official)": 1.370100736618042,
+        "TRAM": 0.337408185005188,
+        "GAMVI + fixed GVHMR": 0.259994775056839
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P7_56_panels.pdf",
+        "png": "./static/gallery/emdb_P7_56_panels.png",
+        "webp": "./static/gallery/emdb_P7_56_panels.webp",
+        "preview": "./static/gallery/emdb_P7_56_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P7_56_overlay.pdf",
+        "png": "./static/gallery/emdb_P7_56_overlay.png",
+        "webp": "./static/gallery/emdb_P7_56_overlay.webp",
+        "preview": "./static/gallery/emdb_P7_56_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P7_57",
+      "title": "Rocking chair",
+      
+      "valid_frames": 1558,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 0.6989935636520386,
+        "WHAM (official)": 1.1399726867675781,
+        "TRAM": 1.5657439231872559,
+        "GAMVI + fixed GVHMR": 1.0630043745040894
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P7_57_panels.pdf",
+        "png": "./static/gallery/emdb_P7_57_panels.png",
+        "webp": "./static/gallery/emdb_P7_57_panels.webp",
+        "preview": "./static/gallery/emdb_P7_57_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P7_57_overlay.pdf",
+        "png": "./static/gallery/emdb_P7_57_overlay.png",
+        "webp": "./static/gallery/emdb_P7_57_overlay.webp",
+        "preview": "./static/gallery/emdb_P7_57_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P8_65",
+      "title": "Straight outdoor walk",
+      
+      "valid_frames": 1981,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 1.0593129396438599,
+        "WHAM (official)": 10.991857528686523,
+        "TRAM": 2.7314298152923584,
+        "GAMVI + fixed GVHMR": 4.120877742767334
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P8_65_panels.pdf",
+        "png": "./static/gallery/emdb_P8_65_panels.png",
+        "webp": "./static/gallery/emdb_P8_65_panels.webp",
+        "preview": "./static/gallery/emdb_P8_65_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P8_65_overlay.pdf",
+        "png": "./static/gallery/emdb_P8_65_overlay.png",
+        "webp": "./static/gallery/emdb_P8_65_overlay.webp",
+        "preview": "./static/gallery/emdb_P8_65_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P9_78",
+      "title": "Stairs up and down",
+      
+      "valid_frames": 1083,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 1.4897539615631104,
+        "WHAM (official)": 1.9454994201660156,
+        "TRAM": 1.1656831502914429,
+        "GAMVI + fixed GVHMR": 0.2966928482055664
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P9_78_panels.pdf",
+        "png": "./static/gallery/emdb_P9_78_panels.png",
+        "webp": "./static/gallery/emdb_P9_78_panels.webp",
+        "preview": "./static/gallery/emdb_P9_78_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P9_78_overlay.pdf",
+        "png": "./static/gallery/emdb_P9_78_overlay.png",
+        "webp": "./static/gallery/emdb_P9_78_overlay.webp",
+        "preview": "./static/gallery/emdb_P9_78_overlay_preview.webp"
+      }
+    },
+    {
+      "id": "P9_79",
+      "title": "Rectangular outdoor walk",
+      
+      "valid_frames": 1917,
+      "metric_label": "Mean pelvis error (m)",
+      "metrics": {
+        "GVHMR": 1.7992321252822876,
+        "WHAM (official)": 4.091739654541016,
+        "TRAM": 0.5023627877235413,
+        "GAMVI + fixed GVHMR": 0.4824255704879761
+      },
+      "panels": {
+        "pdf": "./static/gallery/emdb_P9_79_panels.pdf",
+        "png": "./static/gallery/emdb_P9_79_panels.png",
+        "webp": "./static/gallery/emdb_P9_79_panels.webp",
+        "preview": "./static/gallery/emdb_P9_79_panels_preview.webp"
+      },
+      "overlay": {
+        "pdf": "./static/gallery/emdb_P9_79_overlay.pdf",
+        "png": "./static/gallery/emdb_P9_79_overlay.png",
+        "webp": "./static/gallery/emdb_P9_79_overlay.webp",
+        "preview": "./static/gallery/emdb_P9_79_overlay_preview.webp"
+      }
+    }
+  ]
+}
